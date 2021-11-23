@@ -8,6 +8,15 @@ function getBotResponse(input) {
         return "rock";
     }
 
+    //greeting
+    if (input == "good") {
+        return "Good, Alhamdulillah..!";
+    } else if (input == "fine") {
+        return "Great, May Allah bless you!";
+    } else if (input == "hi") {
+        return "hello 👋";
+    }
+
     // Simple responses
     if (input == "hello") {
         return "Hello there!";
