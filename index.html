@@ -15,6 +15,15 @@
 </head>
 
 <body>
+    <h2 class="title">Our Simple Chatbot</h2>
+    <div class="description-box">
+        <div class="description">
+        </div>
+        <div class="chat-img">
+            <img class="chat-img" src="/images/chat.svg" alt="">
+        </div>
+
+    </div>
     <!-- CHAT BAR BLOCK -->
     <div class="chat-bar-collapsible">
         <button id="chat-button" type="button" class="collapsible">Chat with us!
@@ -28,6 +37,12 @@
                     <div class="chat-container">
                         <!-- Messages -->
                         <div id="chatbox">
+                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_spbxhia1.json"
+                                background="transparent" speed="1" style="width: 180px; height: 180px; margin: 0 auto;"
+                                loop autoplay>
+                            </lottie-player>
+                            </lottie-player>
+
                             <h5 id="chat-clock"></h5>
                             <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
                         </div>
@@ -57,11 +72,11 @@
         </div>
 
     </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="static/scripts/responses.js"></script>
     <script src="static/scripts/chat.js"></script>
-
 </body>
 
 </html>

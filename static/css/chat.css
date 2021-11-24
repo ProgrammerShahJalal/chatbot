@@ -144,6 +144,9 @@
 #emoji-button{
     cursor: pointer;
 }
+#clock{
+    width: 30%;
+}
 @keyframes floatup {
     from {
         transform: translateY(14px);
