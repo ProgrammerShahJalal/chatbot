@@ -1,5 +1,4 @@
 # Chatbot
 
 ## Live Site Link: https://chatbot-quick.netlify.app/
-![chatbot](https://user-images.githubusercontent.com/79104097/143258078-a07adc89-82d1-427e-a083-afe6b59f3ba6.png)
-
+![chatbot](https://user-images.githubusercontent.com/79104097/143258742-5b2436a7-aefe-4898-9b95-f5f44bbeb6ae.png)
