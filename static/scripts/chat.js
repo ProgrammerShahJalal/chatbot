@@ -79,11 +79,19 @@ function buttonSendText(sampleText) {
 function sendButton() {
     getResponse();
 }
+/* emoji script */
+const button = document.querySelector('#emoji-button');
 
-function heartButton() {
-    buttonSendText("❤")
+const picker = new EmojiButton();
 
-}
+button.addEventListener('click', () => {
+    picker.togglePicker(button);
+
+});
+
+picker.on('emoji', emoji => {
+    document.querySelector('input').value += emoji;
+});
 
 // Press enter to send a message
 $("#textInput").keypress(function (e) {
