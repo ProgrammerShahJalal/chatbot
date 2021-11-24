@@ -16,19 +16,18 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
-function getTime() {
-    now = new Date().toLocaleTimeString();
-    return now;
+// chat-clock
+let myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    const d = new Date();
+    document.getElementById("chat-clock").innerHTML = d.toLocaleTimeString();
 }
 
 // Gets the first message
 function firstBotMessage() {
     let firstMessage = "What's up?"
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>'
 
-    let time = getTime();
-
-    $("#chat-timestamp").append(time);
     document.getElementById("userInput").scrollIntoView(false);
 }
 
@@ -82,7 +81,8 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("❤")
+
 }
 
 // Press enter to send a message
